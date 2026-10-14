@@ -1,11 +1,43 @@
 /* ==========================================================================
    ひだまり個別教室 LP(ポートフォリオ用・架空サイト)
    やっていること
+   0. スマホのハンバーガーメニューの開閉
    1. よくある質問(FAQ)の開閉
    2. 申込フォームの入力チェック(ダミー: 実際には送信しません)
    ========================================================================== */
 (function () {
   'use strict';
+
+  /* 0. ハンバーガーメニュー --------------------------------------------- */
+  var navToggle = document.querySelector('.nav-toggle');
+  var nav = document.getElementById('global-nav');
+  var pcQuery = window.matchMedia('(min-width: 960px)');
+
+  function setNav(open) {
+    navToggle.setAttribute('aria-expanded', String(open));
+    navToggle.querySelector('.nav-toggle__label').textContent = open ? '閉じる' : 'メニュー';
+    nav.classList.toggle('is-open', open);
+    document.body.classList.toggle('is-nav-open', open);
+  }
+
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', function () {
+      setNav(navToggle.getAttribute('aria-expanded') !== 'true');
+    });
+    // メニュー内のリンクを押したら閉じる(ページ内の該当箇所へ移動する)
+    nav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () { setNav(false); });
+    });
+    // Escキーで閉じて、ボタンにフォーカスを戻す
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && nav.classList.contains('is-open')) {
+        setNav(false);
+        navToggle.focus();
+      }
+    });
+    // PC幅に広げたら、開いたままの状態をリセット
+    pcQuery.addEventListener('change', function (e) { if (e.matches) setNav(false); });
+  }
 
   /* 1. FAQ ---------------------------------------------------------------
      HTMLでは全て開いた状態で書いてあり(JSが動かなくても読める)、

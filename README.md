@@ -23,7 +23,7 @@ images/           … 写真2枚(fv.jpg, teacher.jpg)・保護者アイコンSVG
 - `noindex`:架空サイトのため検索に載せない
 
 ## 素材クレジット(要記入)
-- FV写真:写真AC(作者:ponta1414 https://www.photo-ac.com/profile/25557945)
+- FV写真:Adobe Stock(ライセンス取得済みの画像を使用)
 - 先生写真:写真AC AIラボで制作者本人が生成(AI生成画像)
 - 保護者アイコン:オリジナル(手描き風SVG)
 - フォント:Noto Sans JP(Google Fonts)
