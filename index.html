@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
   <!-- キャッチの「できた!」用(手書き風:Klee One)。使う文字だけ読み込んで軽くする -->
-  <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap&text=%E3%81%A7%E3%81%8D%E3%81%9F%21" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap&text=%E3%81%A7%E3%81%8D%E3%81%9F%21%2B6%E7%82%B9%E3%81%93%E3%81%8C%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%97%E3%81%B2%E3%81%A0%E5%85%88%E7%94%9F" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script>document.documentElement.classList.add('js');</script>
   <script src="js/main.js" defer></script>
@@ -30,15 +30,18 @@
     <symbol id="icon-pen" viewBox="0 0 24 24"><path d="M4 20l1-4L16.5 4.5a2 2 0 013 3L8 19z"/><path d="M14.5 6.5l3 3"/></symbol>
     <symbol id="icon-chart" viewBox="0 0 24 24"><path d="M5 20V11M12 20V5M19 20v-7"/></symbol>
     <symbol id="icon-cycle" viewBox="0 0 24 24"><path d="M20 12a8 8 0 11-2.5-5.8"/><path d="M20 4v4h-4"/></symbol>
+    <symbol id="icon-yen" viewBox="0 0 24 24"><path d="M6 4l6 8 6-8M12 12v8M7.5 13h9M7.5 16.5h9"/></symbol>
     <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
     <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
     <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></symbol>
   </defs>
 </svg>
 
+<a class="skip-link" href="#main">本文へスキップ</a>
+
 <header class="site-header">
   <div class="site-header__inner">
-    <a class="logo" href="#top" aria-label="ひだまり個別教室 トップへ">
+    <a class="logo" href="#main" aria-label="ひだまり個別教室 トップへ">
       <span class="logo__mark" aria-hidden="true"></span>
       <span class="logo__name">ひだまり<small>個別教室</small></span>
     </a>
@@ -61,7 +64,7 @@
   </div>
 </header>
 
-<main id="top">
+<main id="main">
 
   <!-- 01 ファーストビュー -->
   <section class="hero" aria-labelledby="hero-title">
@@ -76,7 +79,7 @@
       <h1 class="hero__title" id="hero-title">
         「<span class="hero__hand">できた!</span>」が、<br>毎週増えていく。
       </h1>
-      <p class="hero__lead">つまずきをその日のうちに見つけて、<br>毎週の「できた」を記録に残す個別指導です。</p>
+      <p class="hero__lead">つまずきを<wbr>その<wbr>日の<wbr>うちに<wbr>見つけて、<br>毎週の<wbr>「できた」を<wbr>記録に<wbr>残す個別指導です。</p>
       <ul class="hero__points">
         <li><span>体験授業</span><strong>無料</strong></li>
         <li><span>授業は1回</span><strong>60分</strong></li>
@@ -93,21 +96,24 @@
   </section>
 
   <!-- 02 保護者の悩み -->
-  <section class="section section--yellow section--arc" aria-labelledby="worry-title">
+  <section class="section section--white section--arc" aria-labelledby="worry-title">
     <div class="container">
-      <p class="section__eyebrow" aria-hidden="true">Worry</p>
-      <h2 class="section__title" id="worry-title">こんなお悩み、<br>ありませんか?</h2>
-      <img class="worry__img" src="images/worry.png" width="160" height="160" alt="" loading="lazy">
+      <div class="section__head section__head--with-img">
+        <div class="section__head-text">
+          <h2 class="section__title" id="worry-title">こんな<wbr>お悩み、<br>ありませんか?</h2>
+        </div>
+        <img class="worry__img" src="images/worry.png" width="160" height="160" alt="" loading="lazy">
+      </div>
       <ul class="checklist">
-        <li>テストの点が、思うように伸びない</li>
-        <li>テストの結果を、なかなか見せてくれない</li>
-        <li>家で教えようとしても、どう教えたらいいかわからない</li>
-        <li>宿題を、なかなか自分から始めない</li>
-        <li>中学に入る前に、基礎を固めておきたい</li>
+        <li>テストの<wbr>点が、<wbr>思うように<wbr>伸びない</li>
+        <li>テストの<wbr>結果を、なかなか<wbr>見せてくれない</li>
+        <li><span>家で<wbr>教えようと<wbr>しても、<span class="nowrap">どう<wbr>教えたら<wbr>いいか</span><span class="nowrap">わからない</span></span></li>
+        <li>宿題を、なかなか<wbr>自分から<wbr>始めない</li>
+        <li>中学に<wbr>入る<wbr>前に、<wbr>基礎を<wbr>固めて<wbr>おきたい</li>
       </ul>
       <div class="closing-box">
         <img class="closing-box__img" src="images/closing.png" width="173" height="420" alt="" loading="lazy">
-        <p class="closing">どれも、多くのご家庭が通る道です。<span>お子さんのせいでも、親御さんのせいでもありません。</span></p>
+        <p class="closing">どれも、<wbr>多くの<wbr>ご家庭が<wbr>通る<wbr>道です。<span>お子さんの<wbr>せいでも、<wbr>親御さんの<wbr>せいでもありません。</span></p>
       </div>
     </div>
   </section>
@@ -117,105 +123,138 @@
     <div class="container">
       <div class="section__head section__head--with-img">
         <div class="section__head-text">
-          <p class="section__eyebrow" aria-hidden="true">Reason</p>
-          <h2 class="section__title" id="reason-title">選ばれる3つの理由</h2>
+          <h2 class="section__title" id="reason-title">選ばれる<wbr>3つの<wbr>理由</h2>
         </div>
         <img class="reason__img" src="images/reason-teacher.png" width="160" height="160" alt="" loading="lazy">
       </div>
-      <ol class="reasons">
+      <ul class="reasons">
         <li class="reason">
-          <span class="reason__num" aria-hidden="true">1</span>
+          <span class="reason__icon" aria-hidden="true"><svg class="icon"><use href="#icon-chart"/></svg></span>
           <div>
-            <h3 class="reason__title">毎月、テストの点が見える</h3>
-            <p class="reason__text">点数とつまずきを、毎月のレポートで。</p>
+            <h3 class="reason__title">毎月、<wbr>テストの<wbr>点が<wbr>見える</h3>
+            <p class="reason__text">点数と<wbr>つまずきを、<wbr>毎月の<wbr>レポートで。</p>
           </div>
         </li>
         <li class="reason">
-          <span class="reason__num" aria-hidden="true">2</span>
+          <span class="reason__icon" aria-hidden="true"><svg class="icon"><use href="#icon-pen"/></svg></span>
           <div>
-            <h3 class="reason__title">つまずきは、その日のうちに</h3>
-            <p class="reason__text">少人数だからすぐ気づけて、毎週の<span class="nowrap">「できた」</span>も記録に残します。</p>
+            <h3 class="reason__title">つまずきは、<wbr>その<wbr>日の<wbr>うちに</h3>
+            <p class="reason__text">少人数だから<wbr>すぐ<wbr>気づけて、<wbr>毎週の<span class="nowrap">「できた」</span>も<wbr>記録に<wbr>残します。</p>
           </div>
         </li>
         <li class="reason">
-          <span class="reason__num" aria-hidden="true">3</span>
+          <span class="reason__icon" aria-hidden="true"><svg class="icon"><use href="#icon-yen"/></svg></span>
           <div>
-            <h3 class="reason__title">月謝の中身が、ひと目でわかる</h3>
-            <p class="reason__text">追加の費用も、先にお伝えします。</p>
+            <h3 class="reason__title">月謝の<wbr>中身が、<span class="nowrap">ひと目で<wbr>わかる</span></h3>
+            <p class="reason__text">追加の<wbr>費用も、<wbr>先に<wbr>お伝えします。</p>
           </div>
         </li>
-      </ol>
+      </ul>
       <div class="cta-block">
-        <a class="btn btn--cta" href="#entry"><span class="btn__bubble" aria-hidden="true">60秒で入力完了!</span><span class="btn__label">無料体験授業を申し込む</span></a>
+        <a class="btn btn--cta" href="#entry"><span class="btn__label">無料体験授業を申し込む</span></a>
         <p class="note">体験にお越しの方に、学習診断シートをプレゼントします。</p>
       </div>
     </div>
   </section>
 
   <!-- 04 毎月のレポート -->
-  <section class="section section--white section--arc" id="report" aria-labelledby="report-title">
+  <section class="section section--deep section--arc report-section" id="report" aria-labelledby="report-title">
     <div class="container">
-      <p class="section__eyebrow" aria-hidden="true">Report</p>
-      <h2 class="section__title section__title--xl" id="report-title">毎月、<em>テストの点</em>が<br>見えるレポート</h2>
-      <p class="section__lead">「なんとなく」ではなく、数字と言葉でお伝えします。</p>
+      <p class="report-section__kicker">いちばん見てほしいところ</p>
+      <h2 class="section__title section__title--xl" id="report-title">毎月、<em>テストの点</em>が<br>見える<wbr>レポート</h2>
+      <p class="section__lead">「なんとなく」ではなく、<wbr>数字と<wbr>言葉で<wbr>お伝えします。</p>
 
       <div class="report">
-        <article class="report-card report-card--main">
-          <p class="report-card__label">月次レポートの見本(ダミー)</p>
-          <h3 class="report-card__title">算数 単元テスト「分数のわり算」</h3>
-          <div class="bar-row bar-row--lg">
-            <span class="bar-row__label">先月</span>
-            <span class="bar" aria-hidden="true"><i class="bar__fill" style="--value:68%"></i></span>
-            <span class="bar-row__value">68点</span>
-          </div>
-          <div class="bar-row bar-row--lg">
-            <span class="bar-row__label">今月</span>
-            <span class="bar" aria-hidden="true"><i class="bar__fill bar__fill--now" style="--value:74%"></i></span>
-            <span class="bar-row__value bar-row__value--now">74点</span>
-          </div>
-          <dl class="report-notes">
-            <div><dt>つまずきの原因</dt><dd>わる数を逆数にする手順</dd></div>
-            <div><dt>来月の目標</dt><dd>文章題で、自分で式が立てられる</dd></div>
-            <div><dt>毎週の記録</dt><dd>今週「できた」問題 12問(先週 9問)</dd></div>
-          </dl>
-        </article>
+        <!-- 左:レポートでわかる3つのこと(番号は右の見本の丸数字と対応) -->
+        <div class="report__points">
+          <p class="report__points-title">レポートで、わかること</p>
+          <ol class="report-points">
+            <li class="report-points__item">
+              <span class="report-num" aria-hidden="true">1</span>
+              <div>
+                <h3 class="report-points__title">点数の変化</h3>
+                <p class="report-points__text">単元テストの<wbr>点数を、<wbr>先月と<wbr>比べてお伝えします。</p>
+              </div>
+            </li>
+            <li class="report-points__item">
+              <span class="report-num" aria-hidden="true">2</span>
+              <div>
+                <h3 class="report-points__title">つまずきの<wbr>原因</h3>
+                <p class="report-points__text">どこで<wbr>止まっているのかを、<wbr>先生の<wbr>言葉で<wbr>具体的に。</p>
+              </div>
+            </li>
+            <li class="report-points__item">
+              <span class="report-num" aria-hidden="true">3</span>
+              <div>
+                <h3 class="report-points__title">来月の目標</h3>
+                <p class="report-points__text">お子さんと<wbr>一緒に<wbr>決めた、<wbr>次の<wbr>小さな<wbr>目標です。</p>
+              </div>
+            </li>
+          </ol>
+        </div>
 
-        <article class="report-card report-card--sub">
-          <p class="report-card__label">学校のテストの点数の変化(ダミー集計)</p>
-          <div class="segment" role="img" aria-label="上がった65%、変わらない25%、下がった10%">
-            <span class="segment__part segment__part--up" style="--value:65%">65%</span>
-            <span class="segment__part segment__part--same" style="--value:25%">25%</span>
-            <span class="segment__part segment__part--down" style="--value:10%">10%</span>
+        <!-- 右:紙の書類に見立てたレポート見本 -->
+        <figure class="report-paper" aria-label="月次レポートの見本">
+          <div class="report-paper__head">
+            <p class="report-paper__name">ひだまり個別教室 月次レポート</p>
+            <p class="report-paper__meta">10月号/小学5年 ○○さん(見本)</p>
           </div>
-          <div class="segment-legend" aria-hidden="true">
-            <span>上がった 65%</span><span>変わらない 25%</span><span>下がった 10%</span>
+
+          <div class="report-paper__row">
+            <span class="report-num report-num--sm" aria-hidden="true">1</span>
+            <div class="report-paper__body">
+              <p class="report-paper__label">算数 単元テスト「分数のわり算」</p>
+              <p class="report-score">
+                <span class="report-score__before">先月 <b>68</b>点</span>
+                <span class="report-score__arrow" aria-hidden="true">→</span>
+                <span class="report-score__after">今月 <b>74</b>点</span>
+              </p>
+              <p class="report-paper__pen" aria-hidden="true">+6点!</p>
+            </div>
           </div>
-          <p class="fine-print">※ダミーの数字です(架空のサイトです)。実際の運用では、集計の条件と根拠を併記します。結果には個人差があります。</p>
-        </article>
+
+          <div class="report-paper__row">
+            <span class="report-num report-num--sm" aria-hidden="true">2</span>
+            <div class="report-paper__body">
+              <p class="report-paper__label">つまずきの原因</p>
+              <p class="report-paper__text">わる<wbr>数を<wbr>逆数に<wbr>する<wbr>手順</p>
+            </div>
+          </div>
+
+          <div class="report-paper__row">
+            <span class="report-num report-num--sm" aria-hidden="true">3</span>
+            <div class="report-paper__body">
+              <p class="report-paper__label">来月の目標</p>
+              <p class="report-paper__text">文章題で、<wbr>自分で<wbr>式が<wbr>立てられる</p>
+            </div>
+          </div>
+
+          <p class="report-paper__comment"><span aria-hidden="true">先生より:</span>ここができるようになりました!</p>
+          <figcaption class="report-paper__note">※内容は見本(ダミー)です。</figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
   <!-- 05 入塾までの流れ -->
-  <section class="section section--yellow section--wave" id="flow" aria-labelledby="flow-title">
+  <section class="section section--blue section--arc" id="flow" aria-labelledby="flow-title">
     <div class="container">
-      <p class="section__eyebrow" aria-hidden="true">Flow</p>
-      <h2 class="section__title" id="flow-title">入塾までの流れ</h2>
+      <h2 class="section__title" id="flow-title">入塾までの<wbr>流れ</h2>
       <ol class="flow">
         <li class="flow__step">
           <img class="flow__icon" src="images/flow-1.png" width="104" height="104" alt="" loading="lazy">
           <div class="flow__card">
             <p class="flow__label" aria-hidden="true">STEP 01</p>
             <h3 class="flow__title">無料体験授業(約60分)</h3>
-            <p class="flow__text">お子さんと先生が一緒に、普段の宿題や教科書を見ながら進めます。</p>
+            <p class="flow__text">お子さんと<wbr>先生が<wbr>一緒に、<wbr>普段の<wbr>宿題や<wbr>教科書を<wbr>見ながら<wbr>進めます。</p>
           </div>
         </li>
         <li class="flow__step">
           <img class="flow__icon" src="images/flow-2.png" width="104" height="104" alt="" loading="lazy">
           <div class="flow__card">
             <p class="flow__label" aria-hidden="true">STEP 02</p>
-            <h3 class="flow__title">学習状況の確認</h3>
-            <p class="flow__text">つまずいている単元や、学習のクセを先生がお伝えします。</p>
+            <h3 class="flow__title">学習状況の<wbr>確認</h3>
+            <p class="flow__text">つまずいている<wbr>単元や、<wbr>学習の<wbr>クセを<wbr>先生が<wbr>お伝えします。</p>
           </div>
         </li>
         <li class="flow__step">
@@ -223,7 +262,7 @@
           <div class="flow__card">
             <p class="flow__label" aria-hidden="true">STEP 03</p>
             <h3 class="flow__title">目標づくり</h3>
-            <p class="flow__text">お子さん自身が決めた「小さな目標」からスタートします。</p>
+            <p class="flow__text">お子さん<wbr>自身が<wbr>決めた<wbr>「小さな<wbr>目標」から<wbr>スタートします。</p>
           </div>
         </li>
         <li class="flow__step">
@@ -231,7 +270,7 @@
           <div class="flow__card">
             <p class="flow__label" aria-hidden="true">STEP 04</p>
             <h3 class="flow__title">通塾スタート</h3>
-            <p class="flow__text">体験の内容を引き継いで、そのまま授業に入ります。</p>
+            <p class="flow__text">体験の<wbr>内容を<wbr>引き継いで、<wbr>そのまま<wbr>授業に<wbr>入ります。</p>
           </div>
         </li>
       </ol>
@@ -242,17 +281,16 @@
   <!-- 06 先生の紹介 -->
   <section class="section section--white section--arc" aria-labelledby="teacher-title">
     <div class="container container--narrow">
-      <p class="section__eyebrow" aria-hidden="true">Teacher</p>
-      <h2 class="section__title" id="teacher-title">先生のご紹介</h2>
-      <article class="card teacher">
+      <h2 class="section__title" id="teacher-title">先生の紹介</h2>
+      <article class="teacher">
         <img class="teacher__photo" src="images/teacher.jpg" width="480" height="600" alt="ひだまり先生(イメージ写真)" loading="lazy">
-        <div>
-          <p class="teacher__name">ひだまり先生(仮)</p>
-          <h3 class="teacher__lead">「できた!」の一言が出るまで、急かさずに待ちます。</h3>
-          <ul class="teacher__points">
-            <li>わからないに、まず耳を傾けます。</li>
-            <li>毎月のレポートで、点数と現在地をお伝えします。</li>
-          </ul>
+        <div class="teacher__body">
+          <h3 class="teacher__lead">「<span class="hand-mark">できた!</span>」の<wbr>一言が<wbr>出るまで、<wbr>急かさずに<wbr>待ちます。</h3>
+          <div class="teacher__message">
+            <p>勉強が<wbr>苦手な<wbr>子ほど、<wbr>「わからない」を<wbr>なかなか<wbr>言い出せません。<wbr>ひだまりでは、<wbr>まず<wbr>その<wbr>一言が<wbr>出るのを<wbr>待つ<wbr>ところから<wbr>始めます。</p>
+            <p>毎月の<wbr>レポートには、<wbr>点数だけでなく、<wbr>その<wbr>月に<wbr>できるようになった<wbr>ことを、<wbr>私の<wbr>言葉で<wbr>書いて<wbr>お渡しします。</p>
+          </div>
+          <p class="teacher__sign"><span>担当</span>ひだまり先生<small>(仮)</small></p>
         </div>
       </article>
     </div>
@@ -261,20 +299,19 @@
   <!-- 07 保護者の声 -->
   <section class="section section--blue section--arc" aria-labelledby="voice-title">
     <div class="container">
-      <p class="section__eyebrow" aria-hidden="true">Voice</p>
-      <h2 class="section__title" id="voice-title">保護者の方の声</h2>
+      <h2 class="section__title" id="voice-title">保護者の<wbr>方の<wbr>声</h2>
       <ul class="voices">
-        <li class="card voice">
+        <li class="voice">
+          <blockquote class="voice__bubble"><p>まだ<wbr>ムラは<wbr>ありますが、<wbr>算数の<wbr>単元テストで<span class="marker">前より<wbr>解ける<wbr>問題が<span class="nowrap">増えました</span></span>。</p></blockquote>
           <div class="voice__who"><img class="avatar" src="images/avatar-mom1.png" width="64" height="64" alt=""><span>小4・男の子のお母さん</span></div>
-          <p>まだムラはありますが、算数の単元テストで<span class="marker">前より解ける問題が増えました</span>。</p>
         </li>
-        <li class="card voice">
+        <li class="voice">
+          <blockquote class="voice__bubble"><p><span class="marker">「ここが<wbr>わからない」と<wbr>話してくれる</span>ようになりました。</p></blockquote>
           <div class="voice__who"><img class="avatar" src="images/avatar-mom2.png" width="64" height="64" alt=""><span>小5・女の子のお母さん</span></div>
-          <p><span class="marker">「ここがわからない」と話してくれる</span>ようになりました。</p>
         </li>
-        <li class="card voice">
+        <li class="voice">
+          <blockquote class="voice__bubble"><p><span class="marker">どこで<wbr>止まっているかが<wbr>分かる</span>ので、<wbr>家での<wbr>声かけも<wbr>変わりました。</p></blockquote>
           <div class="voice__who"><img class="avatar" src="images/avatar-dad.png" width="64" height="64" alt=""><span>小3・男の子のお父さん</span></div>
-          <p><span class="marker">どこで止まっているかが分かる</span>ので、家での声かけも変わりました。</p>
         </li>
       </ul>
       <p class="fine-print fine-print--center">※ダミーの声です(架空のサイトです)。※個人の感想です。</p>
@@ -284,13 +321,12 @@
   <!-- 08 料金 -->
   <section class="section section--white section--arc" id="price" aria-labelledby="price-title">
     <div class="container container--narrow">
-      <p class="section__eyebrow" aria-hidden="true">Price</p>
-      <h2 class="section__title" id="price-title">料金のご案内</h2>
-      <p class="section__lead">月謝は定額。追加の費用も、先にお伝えします。</p>
+      <h2 class="section__title" id="price-title">料金の<wbr>ご案内</h2>
+      <p class="section__lead">月謝は<wbr>定額。<wbr>追加の<wbr>費用も、<wbr>先に<wbr>お伝えします。</p>
 
       <div class="plans">
         <article class="plan">
-          <p class="plan__lead">まずは習慣づくりから</p>
+          <p class="plan__lead">まずは<wbr>習慣づくりから</p>
           <h3 class="plan__name">週1回コース</h3>
           <p class="plan__price"><span class="plan__num">8,800</span>円</p>
           <p class="plan__per">/月(税込)<br>1回あたり 約2,200円(月4回)</p>
@@ -301,7 +337,7 @@
           </ul>
         </article>
         <article class="plan">
-          <p class="plan__lead">苦手にも取り組む</p>
+          <p class="plan__lead">苦手にも<wbr>取り組む</p>
           <h3 class="plan__name">週2回コース</h3>
           <p class="plan__price"><span class="plan__num">15,400</span>円</p>
           <p class="plan__per">/月(税込)<br>1回あたり 約1,925円(月8回)</p>
@@ -315,47 +351,46 @@
       </div>
 
       <dl class="terms">
-        <div><dt>契約期間の縛り:なし</dt><dd>やめたい月の前月末までにご連絡いただければ、翌月から停止します。違約金はありません。</dd></div>
-        <div><dt>別途かかるもの</dt><dd>教材費(学年ごとに実費)。入会前にご案内します。</dd></div>
-        <div><dt>お支払い方法</dt><dd>口座振替/クレジットカード(体験後、入会手続きの際にお選びいただきます)</dd></div>
+        <div><dt>契約期間の<wbr>縛り:なし</dt><dd>やめたい<wbr>月の<wbr>前月末までに<wbr>ご連絡いただければ、<wbr>翌月から<wbr>停止します。<wbr>違約金は<wbr>ありません。</dd></div>
+        <div><dt>別途かかる<wbr>もの</dt><dd>教材費(学年ごとに<wbr>実費)。<wbr>入会前に<wbr>ご案内します。</dd></div>
+        <div><dt>お支払い<wbr>方法</dt><dd>口座振替/クレジットカード(体験後、<wbr>入会手続きの<wbr>際に<wbr>お選びいただきます)</dd></div>
       </dl>
       <p class="fine-print fine-print--center">※金額・条件はすべてダミーです(架空のサイトです)。</p>
       <div class="cta-block cta-block--tight">
-        <a class="btn btn--cta" href="#entry"><span class="btn__bubble" aria-hidden="true">60秒で入力完了!</span><span class="btn__label">無料体験授業を申し込む</span></a>
+        <a class="btn btn--cta" href="#entry"><span class="btn__label">無料体験授業を申し込む</span></a>
       </div>
     </div>
   </section>
 
   <!-- 09 よくある質問 -->
-  <section class="section section--yellow section--wave" id="faq" aria-labelledby="faq-title">
+  <section class="section section--blue section--arc" id="faq" aria-labelledby="faq-title">
     <div class="container container--narrow">
-      <p class="section__eyebrow" aria-hidden="true">FAQ</p>
-      <h2 class="section__title" id="faq-title">よくあるご質問</h2>
+      <h2 class="section__title" id="faq-title">よく<wbr>ある<wbr>ご質問</h2>
       <!-- JSが無くても全部読めるよう、HTMLでは全て開いた状態。js/main.js が3件目以降を閉じる -->
       <div class="faq">
         <div class="faq__item">
-          <h3 class="faq__heading"><button class="faq__button" type="button" id="faq-q1" aria-expanded="true" aria-controls="faq-a1">無料体験のあとに、無理な勧誘はありますか?</button></h3>
-          <div class="faq__answer" id="faq-a1" role="region" aria-labelledby="faq-q1"><p>ありません。入会のご案内は、ご希望の方のみお送りします。</p></div>
+          <h3 class="faq__heading"><button class="faq__button" type="button" id="faq-q1" aria-expanded="true" aria-controls="faq-a1">無料体験の<wbr>あとに、<wbr>無理な<wbr>勧誘は<wbr>ありますか?</button></h3>
+          <div class="faq__answer" id="faq-a1" role="region" aria-labelledby="faq-q1"><p>ありません。<wbr>入会の<wbr>ご案内は、<wbr>ご希望の<wbr>方のみ<wbr>お送りします。</p></div>
         </div>
         <div class="faq__item">
-          <h3 class="faq__heading"><button class="faq__button" type="button" id="faq-q2" aria-expanded="true" aria-controls="faq-a2">契約期間の縛りや、解約の違約金はありますか?</button></h3>
-          <div class="faq__answer" id="faq-a2" role="region" aria-labelledby="faq-q2"><p>ありません。やめたい月の前月末までにご連絡いただければ、翌月から停止します。</p></div>
+          <h3 class="faq__heading"><button class="faq__button" type="button" id="faq-q2" aria-expanded="true" aria-controls="faq-a2">契約期間の<wbr>縛りや、<wbr>解約の<wbr>違約金は<wbr>ありますか?</button></h3>
+          <div class="faq__answer" id="faq-a2" role="region" aria-labelledby="faq-q2"><p>ありません。<wbr>やめたい<wbr>月の<wbr>前月末までに<wbr>ご連絡いただければ、<wbr>翌月から<wbr>停止します。</p></div>
         </div>
         <div class="faq__item">
-          <h3 class="faq__heading"><button class="faq__button" type="button" id="faq-q3" aria-expanded="true" aria-controls="faq-a3">月謝のほかに、かかる費用はありますか?</button></h3>
-          <div class="faq__answer" id="faq-a3" role="region" aria-labelledby="faq-q3"><p>教材費が学年ごとにかかります(実費)。入会前にご案内します。</p></div>
+          <h3 class="faq__heading"><button class="faq__button" type="button" id="faq-q3" aria-expanded="true" aria-controls="faq-a3">月謝の<wbr>ほかに、<wbr>かかる<wbr>費用は<wbr>ありますか?</button></h3>
+          <div class="faq__answer" id="faq-a3" role="region" aria-labelledby="faq-q3"><p>教材費が<wbr>学年ごとに<wbr>かかります<wbr>(実費)。<wbr>入会前に<wbr>ご案内します。</p></div>
         </div>
         <div class="faq__item">
-          <h3 class="faq__heading"><button class="faq__button" type="button" id="faq-q4" aria-expanded="true" aria-controls="faq-a4">支払い方法は何がありますか?</button></h3>
-          <div class="faq__answer" id="faq-a4" role="region" aria-labelledby="faq-q4"><p>口座振替とクレジットカードです。</p></div>
+          <h3 class="faq__heading"><button class="faq__button" type="button" id="faq-q4" aria-expanded="true" aria-controls="faq-a4">支払い<wbr>方法は<wbr>何が<wbr>ありますか?</button></h3>
+          <div class="faq__answer" id="faq-a4" role="region" aria-labelledby="faq-q4"><p>口座振替と<wbr>クレジットカードです。</p></div>
         </div>
         <div class="faq__item">
-          <h3 class="faq__heading"><button class="faq__button" type="button" id="faq-q5" aria-expanded="true" aria-controls="faq-a5">振替はできますか?</button></h3>
-          <div class="faq__answer" id="faq-a5" role="region" aria-labelledby="faq-q5"><p>前日までのご連絡で、同月内に振替できます。(ダミー回答)</p></div>
+          <h3 class="faq__heading"><button class="faq__button" type="button" id="faq-q5" aria-expanded="true" aria-controls="faq-a5">振替は<wbr>できますか?</button></h3>
+          <div class="faq__answer" id="faq-a5" role="region" aria-labelledby="faq-q5"><p>前日までの<wbr>ご連絡で、<wbr>同月内に<wbr>振替できます。<wbr>(ダミー回答)</p></div>
         </div>
         <div class="faq__item">
-          <h3 class="faq__heading"><button class="faq__button" type="button" id="faq-q6" aria-expanded="true" aria-controls="faq-a6">宿題の量は、どのくらいですか?</button></h3>
-          <div class="faq__answer" id="faq-a6" role="region" aria-labelledby="faq-q6"><p>学年とお子さんのペースに合わせて、無理のない量に調整します。(ダミー回答)</p></div>
+          <h3 class="faq__heading"><button class="faq__button" type="button" id="faq-q6" aria-expanded="true" aria-controls="faq-a6">宿題の<wbr>量は、<wbr>どの<wbr>くらいですか?</button></h3>
+          <div class="faq__answer" id="faq-a6" role="region" aria-labelledby="faq-q6"><p>学年と<wbr>お子さんの<wbr>ペースに<wbr>合わせて、<wbr>無理の<wbr>ない<wbr>量に<wbr>調整します。<wbr>(ダミー回答)</p></div>
         </div>
       </div>
     </div>
@@ -364,9 +399,8 @@
   <!-- 10 無料体験の申込フォーム -->
   <section class="section section--deep section--arc" id="entry" aria-labelledby="entry-title">
     <div class="container container--narrow">
-      <p class="section__eyebrow" aria-hidden="true">Entry</p>
-      <h2 class="section__title" id="entry-title">無料体験授業のお申込み</h2>
-      <p class="section__lead">約60分、お子さんと一緒に体験できます。<br>体験だけで終わっても大丈夫です。</p>
+      <h2 class="section__title" id="entry-title">無料体験授業の<wbr>お申込み</h2>
+      <p class="section__lead">約60分、<wbr>お子さんと<wbr>一緒に<wbr>体験できます。<br>体験だけで<wbr>終わっても<wbr>大丈夫です。</p>
 
       <form class="form" id="entry-form" novalidate>
         <div class="field">
@@ -409,12 +443,16 @@
   <!-- 11 教室のご案内 -->
   <section class="section section--white section--arc" id="access" aria-labelledby="access-title">
     <div class="container">
-      <p class="section__eyebrow" aria-hidden="true">Access</p>
-      <h2 class="section__title" id="access-title">教室のご案内</h2>
+      <h2 class="section__title" id="access-title">教室の<wbr>ご案内</h2>
       <div class="access">
-        <div class="map" role="img" aria-label="地図(ダミー表示)"></div>
+        <div class="access__map">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.918982724971!2d139.71509351189437!3d35.80192222243399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018936ef93ed8e1%3A0x2108995708cb90a4!2z5bed5Y-j6aeF!5e0!3m2!1sja!2sjp!4v1791957281549!5m2!1sja!2sjp" title="教室周辺の地図(川口駅)" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <p class="map__note">※地図は川口駅周辺のイメージです(架空のサイトのため、実際の教室はありません)。</p>
+        </div>
         <ul class="info">
-          <li><span class="icon-badge icon-badge--lg"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg></span><span>○○市○○町1-2-3(ダミー)<br>○○駅から徒歩5分</span></li>
+          <li><span class="icon-badge icon-badge--lg"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg></span><span>〒332-0017<br>埼玉県川口市栄町○-○-○<span class="nowrap">(ダミー)</span><br>川口駅から徒歩5分</span></li>
           <li><span class="icon-badge icon-badge--lg"><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg></span><span>平日 15:00〜20:30 / 土曜 10:00〜17:00<br>(日祝休み)</span></li>
           <li><span class="icon-badge icon-badge--lg"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg></span><span>00-0000-0000(ダミー)</span></li>
         </ul>

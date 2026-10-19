@@ -11,13 +11,19 @@
   /* 0. ハンバーガーメニュー --------------------------------------------- */
   var navToggle = document.querySelector('.nav-toggle');
   var nav = document.getElementById('global-nav');
-  var pcQuery = window.matchMedia('(min-width: 960px)');
+  var pcQuery = window.matchMedia('(min-width: 1100px)');
 
   function setNav(open) {
     navToggle.setAttribute('aria-expanded', String(open));
     navToggle.querySelector('.nav-toggle__label').textContent = open ? '閉じる' : 'メニュー';
     nav.classList.toggle('is-open', open);
     document.body.classList.toggle('is-nav-open', open);
+    // 開いている間は、後ろのページを操作できないようにする(Tabでメニューの外に出ないように)
+    document.querySelectorAll('main, .site-footer, .skip-link').forEach(function (el) {
+      el.inert = open;
+    });
+    // 開いたら、最初のリンクにフォーカスを移す
+    if (open) nav.querySelector('a').focus();
   }
 
   if (navToggle && nav) {
