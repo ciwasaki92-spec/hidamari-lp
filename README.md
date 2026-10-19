@@ -23,9 +23,9 @@ images/           … 写真2枚(fv.jpg, teacher.jpg)・イラスト(worry, clos
 - **JSがなくても読める**:FAQは全展開で書き、JSで最初の2件以外を閉じる
 - `noindex`:架空サイトのため検索に載せない
 
-## 素材クレジット(要記入)
+## 素材クレジット
 - FV写真:Adobe Stock(ライセンス取得済みの画像を使用)
 - 先生写真:写真AC AIラボで制作者本人が生成(AI生成画像)
-- イラスト(お悩み・先生・入塾の流れ・保護者アイコン):(入手先を記入)
+- イラスト(お悩み・先生・入塾の流れ・保護者アイコン):Loose Drawing https://loosedrawing.com/ (サイトの配色に合わせて色を調整して使用)
 - フォント:Noto Sans JP、Klee One(Google Fonts)
 - 地図:Googleマップの埋め込み(川口駅周辺のイメージ)
