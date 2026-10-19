@@ -138,18 +138,6 @@ textarea {
   }
 }
 
-/* 日本語の改行:HTMLの文節の切れ目に <wbr> を入れ、それ以外では改行しない。
-   (BudouXで文節を判定して入れています。word-break: auto-phrase はSafari非対応のため、この方法に)
-   text-wrap: pretty は、対応ブラウザで最後の行が1〜2文字だけになるのを防ぐ */
-.section__title, .section__lead, .hero__lead, .closing, .checklist li,
-.reason__title, .reason__text, .report-points__title, .report-points__text, .report-paper__text,
-.flow__title, .flow__text, .faq__button, .faq__answer, .voice__bubble, .terms dd,
-.teacher__lead, .teacher__message, .plan__lead {
-  word-break: keep-all;
-  overflow-wrap: anywhere;   /* 万一はみ出しそうなときは、どこでも改行してよい */
-  text-wrap: pretty;
-}
-
 /* 3. レイアウト ------------------------------------------------------------- */
 .container {
   width: 100%;
@@ -431,6 +419,12 @@ textarea {
 
 .nowrap {
   white-space: nowrap;
+}
+.sp-only {                         /* スマホだけで効く改行(PCでは無視) */
+  display: inline;
+}
+@media (min-width: 768px) {
+  .sp-only { display: none; }
 }
 
 /* アイコン(SVGスプライト) */
@@ -1154,8 +1148,14 @@ body.is-nav-open {
   display: grid;
   gap: 28px;
 }
+.report__points {                 /* 文字は左揃えのまま、かたまりごと中央に置く */
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+}
 .report__points-title {
   margin-bottom: 12px;
+  text-align: center;
   font-size: var(--fs-sm);
   font-weight: 700;
   letter-spacing: .08em;
@@ -1210,7 +1210,6 @@ body.is-nav-open {
   background: var(--color-white);
   color: var(--color-ink);
   box-shadow: 0 18px 40px rgba(0, 0, 0, .28);
-  transform: rotate(-1.5deg);         /* 机に置いた書類のように少し傾ける */
 }
 .report-paper::before {             /* 上の黄色いマスキングテープ */
   content: "";
@@ -1329,6 +1328,12 @@ body.is-nav-open {
   .report-points {
     gap: 28px;
   }
+  .report__points {
+    margin-inline: 0;
+  }
+  .report__points-title {
+    text-align: left;              /* PCは左の列なので左揃え */
+  }
   .report-points__title {
     font-size: 1.375rem;
   }
@@ -1347,6 +1352,7 @@ body.is-nav-open {
   }
   .report-paper {
     padding: 32px 32px 24px;
+    transform: rotate(-1.5deg);     /* PCだけ、机に置いた書類のように少し傾ける */
   }
   .report-paper__name {
     font-size: var(--fs-base);
